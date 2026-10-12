@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore reported visitor numbers at major art museums and galleries around the world.">
+  <title>Gallery Analytics | Gallery Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script><script src="analytics.js" defer></script>
+</head>
+<body>
+  <!-- Shared site navigation -->
+  <header class="site-header"><a class="wordmark" href="index.html" aria-label="Gallery Notes home">GALLERY <span>/</span> NOTES</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button><nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="aboutus.html">About Us</a><a href="managegalleries.html">Manage Galleries</a><a href="analytics.html" aria-current="page">Analytics</a></nav></header>
+  <main id="main-content" class="page-shell tool-page analytics-page">
+    <!-- Data story heading -->
+    <section class="tool-heading"><p class="eyebrow">THE COLLECTION · BY THE NUMBERS</p><h1>Look closer at <em>the crowds.</em></h1><p>Reported annual visits offer one measure of the reach of the world’s best-known art museums.</p></section>
+    <!-- Chart.js visualizations -->
+    <section class="charts-grid" aria-label="Art museum visitor analytics">
+      <article class="chart-panel chart-wide"><div class="chart-heading"><div><p class="eyebrow">01 — ANNUAL ATTENDANCE</p><h2>Ten museums drawing the world</h2></div><span class="chart-unit">Visitors · millions</span></div><div class="chart-frame"><canvas id="visitors-chart" aria-label="Bar chart showing annual visitors to ten major art museums, in millions" role="img"></canvas></div></article>
+      <article class="chart-panel chart-region"><div class="chart-heading"><div><p class="eyebrow">02 — REGIONAL MIX</p><h2>Where the museums are</h2></div></div><div class="chart-frame doughnut-frame"><canvas id="region-chart" aria-label="Doughnut chart showing the regional mix of ten selected museums" role="img"></canvas></div></article>
+      <aside class="insight-panel"><p class="eyebrow">A NOTE ON THE NUMBERS</p><h2>Big collections draw <em>big crowds.</em></h2><p>The Louvre leads this selection by a wide margin, with the Metropolitan Museum and British Museum forming a second tier. Europe accounts for the largest share of the ten institutions shown; these figures capture museum visits, not the full reach of art spaces worldwide.</p></aside>
+    </section>
+    <!-- Attribution and caveat -->
+    <p class="data-source">Source: The Art Newspaper, <a href="https://www.theartnewspaper.com/visitor-figures" target="_blank" rel="noopener noreferrer">annual museum visitor figures</a> (2023 reporting). Values are rounded estimates drawn from institutional and published attendance reports; definitions and reporting periods can vary by institution.</p>
+    <noscript><p class="notice">JavaScript is required to display the charts.</p></noscript>
+  </main>
+  <!-- Shared site footer -->
+  <footer class="site-footer"><a class="wordmark" href="index.html">GALLERY <span>/</span> NOTES</a><p>Made by Kanye Smith · ISM 6225</p><a href="#main-content">Back to top ↑</a></footer>
+</body>
+</html>
